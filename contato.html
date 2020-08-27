@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Compre a sua bicicletas personalizada na BikCraft">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BikCraft - bicicletas personalizadas" />
+  <meta property="og:description" content="Compre a sua bicicletas personalizada na BikCraft" />
+  <meta property="og:url" content="hhtps://examplesite.com" />
+  <meta property="og:image" content="http://examplesite.com/img/logo-og.png" />
+  <link rel="shortcut icon" href="img/Icones/favicon.ico">
+
+  <link rel="stylesheet" href="css/style_final.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+  <title>Contato</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="grid-4 logo">
+        <img src="img/logo/bikcraft.svg" alt="BikCraft_logo">
+      </a>
+      <nav class="grid-12 header_menu">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="portifolio.html">Portifolio</a></li>
+          <li><a href="contato.html" class="menu_ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="introducao_interna interna_contato">
+    <div data-anime="400" class="container fadeInDown">
+      <h1>Contato</h1>
+      <p>Tire as suas dúvidas com a gente</p>
+    </div>
+  </section>
+
+
+  <section class="orcamento_contato">
+    <div data-anime="800" class="container fadeInDown">
+
+      <form id="form_orcamento" method="POST" action="./enviar.php" class="contato_form  grid-7 formphp">
+        <label for="Nome">Nome</label>
+        <input type="text" id="Nome" name="nome" required>
+        <label for="E-Mail">E-Mail</label>
+        <input type="email" id="E-Mail" name="email" required>
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone">
+        <label class="nao-aparece">Deixe em branco caso seja humano.</label>
+        <input type="text" class="nao-aparece" name="leaveblank">
+        <label class="nao-aparece">Não preencha caso seja humano.</label>
+        <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+        <label for="Mensagem">Mensagem</label>
+        <textarea name="mensagem" id="Mensagem" required></textarea>
+        <button id="enviar" type="submit" class="btn btn_sem_background" name="enviar">Enviar</button>
+      </form>
+      <div class="contato_dados grid-6">
+        <h3>Dados</h3>
+        <span>+55 31 99999-9999</span>
+        <span class="dados_email">orcamento@bikcraft.com</span>
+        <span>Rua Onde Judas Bateu as Botas - Minas Gerais</span>
+        <h3>Redes Sociais</h3>
+        <ul class="redes_icones">
+          <li>
+            <a href="http://www.facebook.com" target="_blank"> <img src="img/redes-sociais/facebook.svg" alt="Facebook_Icone"></a>
+          </li>
+          <li>
+            <a href="http://www.twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter_icone"></a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram_Icone"></a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="maps_print container">
+    <img src="img/Foto%20do%20maps.jpg" alt="Google_maps_print">
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="grid-8">
+          <h3>NOSSA HISTÓRIA</h3>
+          <p class="historia">"O verdadeiro segredo da felicidade está em ter um interesse
+            genuíno por todos os interesses da vida cotidiana. Ter um interesse genuíno por todos os interesses da vida cotidiana.</p>
+        </div>
+        <div class="grid-4">
+          <h3>Contato</h3>
+          <ul class="contato_lista">
+            <li>-21 99999-9999</li>
+            <li>-example@email.com</li>
+            <li>-endereço</li>
+          </ul>
+        </div>
+        <div class="grid-4">
+          <h3>Redes Sociais</h3>
+          <ul class="redes_icones">
+            <li>
+              <a href="http://www.facebook.com" target="_blank"> <img src="img/redes-sociais/facebook.svg" alt="Facebook_Icone"></a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter_icone"></a>
+            </li>
+            <li>
+              <a href="http://www.instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram_Icone"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class=" container">
+          <p class="grid-16">VR DESIGN 2020 - Todos os Direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-form.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
